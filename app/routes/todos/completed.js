@@ -1,4 +1,4 @@
-// routes/todos/active.js
+// routes/todos/completed.js
 
 /**
   @module app
@@ -6,15 +6,15 @@
 */
 
 /**
-  The todos active route.
+  The todos completed route.
   
   @namespace App
-  @property TodosActiveRoute
+  @property TodosCompletedRoute
 */
-var TodosActiveRoute = Ember.Route.extend({
+var TodosCompletedRoute = Ember.Route.extend({
   model: function(){
     return this.store.filter('todo', function (todo) {
-      return !todo.get('isCompleted');
+      return todo.get('isCompleted');
     });
   },
   renderTemplate: function(controller){
@@ -22,4 +22,4 @@ var TodosActiveRoute = Ember.Route.extend({
   }
 });
 
-export default TodosActiveRoute;
+export default TodosCompletedRoute;
