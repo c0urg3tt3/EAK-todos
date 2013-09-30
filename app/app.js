@@ -1,18 +1,19 @@
-import Resolver from 'resolver';
-import editTodoView from 'appkit/views/edit_todo';
+// app.js
 
 /**
   @module app
   @main  
 */
 
+import Resolver from 'resolver';
+import editTodoView from 'appkit/views/edit_todo';
+
 /**
-  Namespace properties and methods 
-  for the whole application.
+  Namespace for the whole application.
   
-  @module app
-  @property App
+  @class App
   @constructor  
+  @extends Ember.Application
 */
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,

@@ -9,7 +9,8 @@
   The edit todo view.
   
   @namespace App
-  @property EditTodoView
+  @class EditTodoView
+  @extends Ember.TextField
 */
 var EditTodoView = Ember.TextField.extend({
   didInsertElement: function() {

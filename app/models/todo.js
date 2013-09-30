@@ -9,7 +9,8 @@
   The Todo model.
   
   @namespace App
-  @property Todo
+  @class Todo
+  @extends DS.Model
 */
 var Todo = DS.Model.extend({
   /**
@@ -41,7 +42,7 @@ Todo.FIXTURES = [
   }, {
     id: "3",
     title: 'develop amazing things',
-    isCompleted: true
+    isCompleted: false
   }
 ];
 

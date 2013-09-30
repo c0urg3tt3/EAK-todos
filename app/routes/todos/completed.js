@@ -9,7 +9,8 @@
   The todos completed route.
   
   @namespace App
-  @property TodosCompletedRoute
+  @class TodosCompletedRoute
+  @extends Ember.Route
 */
 var TodosCompletedRoute = Ember.Route.extend({
   model: function(){

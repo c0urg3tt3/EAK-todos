@@ -9,7 +9,8 @@
   The todo controller (todos item).
   
   @namespace App
-  @property TodoController
+  @class TodoController
+  @extends Ember.ObjectController
 */
 var TodoController = Ember.ObjectController.extend({
   isCompleted: function(key, value){

@@ -9,7 +9,8 @@
   The todos index route.
   
   @namespace App
-  @property TodosIndexRoute
+  @class TodosIndexRoute
+  @extends Ember.Route
 */
 var TodosIndexRoute = Ember.Route.extend({
   model: function() {

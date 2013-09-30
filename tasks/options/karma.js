@@ -1,7 +1,7 @@
 module.exports = {
   options: {
     configFile: 'karma.conf.js',
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     reporters: ['coverage', 'dots']
   },
   ci: {

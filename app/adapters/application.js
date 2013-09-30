@@ -9,7 +9,8 @@
   The default App store adapter.
   
   @namespace App
-  @property ApplicationAdapter
+  @class ApplicationAdapter
+  @extends DS.FixtureAdapter
 */
 var ApplicationAdapter = DS.FixtureAdapter.extend({
     latency: 1000

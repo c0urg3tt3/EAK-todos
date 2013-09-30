@@ -9,7 +9,8 @@
   The todos route.
   
   @namespace App
-  @property TodosRoute
+  @class TodosRoute
+  @extends Ember.Route
 */
 var TodosRoute = Ember.Route.extend({
     model: function() {

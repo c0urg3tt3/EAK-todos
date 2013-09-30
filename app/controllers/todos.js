@@ -9,7 +9,8 @@
   The todos controller.
   
   @namespace App
-  @property TodosController
+  @class TodosController
+  @extends Ember.ArrayController
 */
 var TodosController = Ember.ArrayController.extend({
   remaining: function () {
