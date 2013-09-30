@@ -1,4 +1,5 @@
 import Resolver from 'resolver';
+import editTodoView from 'appkit/views/edit_todo';
 
 /**
   @module app
@@ -19,5 +20,7 @@ var App = Ember.Application.extend({
   modulePrefix: 'appkit', // TODO: loaded via config
   Resolver: Resolver
 });
+
+Ember.Handlebars.helper('edit-todo', editTodoView);
 
 export default App;
