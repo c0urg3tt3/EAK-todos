@@ -25,4 +25,24 @@ var Todo = DS.Model.extend({
   isCompleted: DS.attr('boolean')
 });
 
+/**
+    @property FIXTURES
+    @type {Array}
+*/
+Todo.FIXTURES = [
+  {
+    id: "1",
+    title: 'install EAK',
+    isCompleted: true
+  }, {
+    id: "2",
+    title: 'install additional dependencies',
+    isCompleted: true
+  }, {
+    id: "3",
+    title: 'develop amazing things',
+    isCompleted: true
+  }
+];
+
 export default Todo;
